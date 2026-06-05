@@ -1,0 +1,16 @@
+/*
+    Core critical happy path testcases
+    1) Register
+    2) Login using valid and invalid - ✔
+    3) Add products to cart - ✔
+    4)click cart -> checkout - ✔
+    5)Enter payment info
+    6)Place order -✔
+    7)Verify placed order -✔
+    8)Download order details and verify successful downloads
+    9)Go to orders and verify the order placed (7)
+    10)delete the placed order
+    10)sign out
+     */
+
+

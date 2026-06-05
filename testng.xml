@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="classes"  thread-count="2" name="All Test Suite">
+    <listeners>
+        <listener class-name="AmazonWebsiteTest.ListenersTest"></listener>
+    </listeners>
+    <test name="Test Jenkins">
+      <groups>
+          <run>
+              <include name="TestJenkins"/>
+          </run>
+      </groups>
+        <classes>
+            <class name="AmazonWebsiteTest.LandinpageTest"></class>
+        </classes>
+    </test>
+
+</suite>

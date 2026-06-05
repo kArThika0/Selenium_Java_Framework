@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="classes" name="All Test Suite">
+    <listeners>
+        <listener class-name="EcommTest.Listeners"></listener>
+    </listeners>
+    <test  thread-count="2" name="Test Negative Cases">
+        <groups>
+            <run>
+                <include name="negative"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="EcommTest.ErrorValidations"></class>
+        </classes>
+    </test>
+
+    <test thread-count="2" name="Test Positive Cases">
+        <groups>
+            <run>
+                <include name="positive"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="EcommTest.SeleniumFramework"></class>
+        </classes>
+    </test>
+
+</suite>

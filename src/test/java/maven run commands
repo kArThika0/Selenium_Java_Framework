@@ -1,0 +1,7 @@
+Run via terminal using maven commands along with surefire plugin
+mvn test -PJenkinsTest -Dbrowser=Firefox
+mvn test -PJenkinsTest -Dbrowser=chromeheadless
+
+Run jenkins
+1) java -jar jenkins.war --httpPort=9090
+open browser and goto http://localhost:9090
