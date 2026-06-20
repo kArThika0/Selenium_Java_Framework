@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="SeleniumPractise(failed)">
     <classes>
-      <class name="EcommTest.CucumberTestNGRunner">
+      <class name="DataDrivenFromExcel">
         <methods>
-          <include name="setUpClass"/>
-          <include name="runScenario" invocation-numbers="1"/>
-          <include name="tearDownClass"/>
+          <include name="animalSoundTest"/>
         </methods>
-      </class> <!-- EcommTest.CucumberTestNGRunner -->
+      </class> <!-- DataDrivenFromExcel -->
     </classes>
   </test> <!-- SeleniumPractise(failed) -->
 </suite> <!-- Failed suite [Default Suite] -->
